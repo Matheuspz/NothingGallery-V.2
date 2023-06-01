@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing Gallery</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/comprar.css">
+    <script src="/javacript/comprar.js"></script>
+</head>
+<body>
+
+    <!-- CABEÇALHO PRESO -->
+
+    <header> 
+        <table class="tableHD">
+            <tr> 
+                <th> <a href="/html/index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a> </th>
+                <th> <div class="searchbar"></div> </th> 
+
+            </tr>
+        </table>
+    </header>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <main>
+        
+        <div class="comprar">
+            <div class="imgQDR"> <img src="/images/Surrealismo/Stop in the time.jpg" style="width: 80%; height: 90%; border: 2px solid #ffffff;" id="imgQDR"> </div>
+            <div class="infoQDR">
+                <div class="nomeQDR" id="nomeQDR"> Stop in the time </div>
+                <div class="precoQDR" id="precoQDR"> R$ 150,00 </div>
+                <div class="freteQDR">
+                    Em 6x de R$ 54,50 sem juros
+                </div> 
+                <br><br>
+                <div class="desc"><div class="desc_txt"></div></div>
+                <div class="finalizarQDR">
+                    <div class="qtdQDR">
+                        <input type="button" value="-" class="btnQTD" onclick="diminuir();"></button>
+                        <span class="qtdValor" id="qtd"> 1 </span>
+                        <input type="button" value="+" class="btnQTD" onclick="aumentar();"></button>
+                    </div>
+                    <div class="tamahnoQDR">
+                        <div style="font-size: 1.5em;">Tamanho</div>
+                        <div class="tamanho">G</div>
+                    </div>
+                    <div class="fimQDR">
+                        <div class="finalizar"><a> Finalizar compra </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <br><br><br><br><br><br>
+
+    <footer>
+        <div class="tbfooter"><br><br><br>
+                <div class="thfooter">Contate-nos</div>
+                    <br><br>
+                    <a href="https://www.instagram.com/" target="_blank" class="links"> Instagram </a> <br>
+                    <a href="https://twitter.com/i/flow/login" target="_blank" class="links"> Twitter </a> <br>
+                    <l style="font-size: 1.5em;">Nothing_gallery@gmail.com</l>
+                </div>
+        </div>
+    </footer>
+
+</body>
+</html>

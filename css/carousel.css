@@ -1,0 +1,224 @@
+
+.slideshow-container {
+    width: 40vw;
+    position: relative;
+    margin: auto;
+    top: 8%;
+  }
+  
+
+  .mySlides {
+    display: none;
+  }
+  .mySlidesTmpSp {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+  }
+
+  .container_plusSlides {
+    position: relative;
+    height: 5vh;
+    width: 24.5vw;
+    left: 15vh;  
+  }
+
+  .prev {
+    cursor: pointer;
+    position: absolute;
+    width: 2.5vw;
+    height: 4vh;
+    padding-top: 1vh;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    cursor: pointer;
+    position: absolute;
+    width: 2.5vw;
+    height: 4vh;
+    padding-top: 1vh;
+    top: 0;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  .text {
+    color: #ffffff;
+    font-size: 2em;
+    position: absolute;
+    
+    width: 100%;
+    text-align: center;
+    font-family: Voga;
+  }
+  
+  .text_quadros {
+    color: #ffffff;
+    font-size: 2em;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    font-family: Voga;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  
+
+
+.slideshow-container_quadros {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .mySlidesQDR {
+    display: none;
+    width: 70%;
+    height: 100%;
+  }
+  .mySlidesSUR {
+    display: none;
+    width: 70%;
+    height: 100%;
+  }
+
+
+  .mySlidesTmp {
+    width: 70%;
+    height: 100%;
+  }
+
+  .quadro_slide {
+    width: 70%;
+    height: 100%;
+    border: 3px solid #ffffff;
+  }
+
+  .prev_next_grunge {
+    height: 15vh; 
+    width: 10vh;
+    
+  }
+/*
+  .prev_grunge .next_grunge {
+    cursor: pointer;
+    position: absolute;
+    top: 95vh;
+    width: auto;
+    margin: 75vh;
+    right: 39vh;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }*/
+  .container_plusSlidesGRN {
+    position: relative;
+    height: 5vh;
+    width: 24vw;
+    left: 2.7vw;
+  }
+
+    .prev_grunge {
+      cursor: pointer;
+      position: absolute;
+      width: 2.5vw;
+      height: 4vh;
+      padding-top: 1vh;
+      top: 0;
+      left: 0;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .next_grunge {
+      cursor: pointer;
+      position: absolute;
+      width: 2.5vw;
+      height: 4vh;
+      padding-top: 1vh;
+      top: 0;
+      right: 0;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .prev_grunge:hover, .next_grunge:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .next_grunge {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+  @media screen and (min-width: 1920px) {
+    .prev_grunge, .next_grunge {
+      cursor: pointer;
+      position: absolute;
+      top: 85vh;
+      width: auto;
+      margin: 75vh;
+      right: 45vh;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    .prev_grunge:hover, .next_grunge:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    .next_grunge {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+  }
+

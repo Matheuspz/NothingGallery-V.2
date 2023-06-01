@@ -1,0 +1,130 @@
+@font-face {
+    font-family: Voga;
+    src: url(/font/CDType\ -\ Voga\ Medium.otf);
+}
+
+body {
+    margin: 0;
+    height: auto;
+    background-image: url(/images/fundo.svg);
+    background-size: 300vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 9vh;
+    top: 0vh;
+    left: 0vh;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Voga;
+    text-align: left;
+    justify-content: space-evenly;
+    padding-bottom: 1vh;
+    white-space: nowrap;
+    border-bottom: 0.5vh solid #ffffff;
+    z-index: 2;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tableHD {
+    border-spacing: 13em 0;
+}
+    .searchbar {
+        width: 30vw;
+        height: 1vh;
+        font-size: 1em;
+        padding: 10px;
+        background-color: none;
+    }
+    .user {
+        height: 50px;
+        width: 50px;
+    }
+
+.tableSpecial {
+    height: 65vh;
+    width: 100%;
+    font-family: Voga;
+}
+    .TS_th1 {
+        width: 45%;
+        height: 100%;
+        background-image: url(/images/quadro_borrado1.svg);
+        background-size: cover;
+        font-size: 4em;
+        color: #F8FD0C;
+    }
+        .estrela {
+            width: 5vw;
+            height: 7vh;
+        }
+    .TS_th2 {
+        border-left: 0.5vh solid #ffffff;
+        border-bottom: 0.5vh solid #ffffff;
+        background-color: #44444491;
+    }
+
+    .divspecial {
+        background-color: #000000;
+        height: 7vh;
+        width: 100%;
+        border-top: 1vh solid #000000;
+    }
+
+.tbquadros {
+    font-family: Voga;
+    color: white; 
+    font-size: 4em;   
+}
+
+.quadro {
+    text-align: center;
+    border: 0.5vh solid #ffffff;;
+}
+    .h1grunge {
+        font-family: Voga;
+        color: white; 
+        font-size: 3em;
+    }
+
+
+
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #18181870;
+    color: #ffffff;
+    font-family: Voga;
+    display: flex;
+    align-items: center;
+}
+.tbfooter{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.thfooter {
+    font-size: 2em;
+}
+.links {
+    font-size: 1.5em;
+    color: #bebebe;
+    text-decoration: none;
+
+}
