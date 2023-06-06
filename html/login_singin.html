@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nothing Gallery</title>
+        <link rel="stylesheet" href="/css/login_singin.css">
+        <script src="/javacript/login_singin.js"></script>
+    </head>
+    <body>
+
+    <!-- CABEÇALHO PRESO -->
+
+        <header> 
+            <table class="tableHD">
+                <tr> 
+                    <th> <a href="/html/index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a> </th>
+                    <th> <div class="searchbar"></div> </th> 
+
+                </tr>
+            </table>
+        </header>
+        <br><br><br><br><br><br><br><br><br>
+
+
+        <main>
+            <table style="width: 100%; height: 60vh; border-spacing: 12em 0;">
+                <tr>
+
+                    <th style="width: 50%; height: 50vh;">
+
+                        <div class="login"> <br>
+                            <legend>Entrar</legend>
+                            <br>
+                            <form action="/html/login_singin.html" method="post">
+                                <input type="text" class="inform" id="e-mail" placeholder="E-mail" name="email"><br>
+                                <input type="password" class="inform" id="senha" placeholder="senha" name="senha"><br>
+                                <div style="text-align: left;">
+                                    <a href="#" target="_self" class="links">Esqueceu senha?</a>
+                                </div>
+                                
+                                <br><br><br>
+
+                                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                                    <input type="reset" class="limpar" id="limpar" placeholder="Limpar" name="limpar"> 
+                                    
+                                    <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
+                                </div>
+                            </form>
+
+
+                            <div class="login_alternative">
+                                <img src="/images/loging_alternate.svg" class="login_alternatives">
+                            </div>
+                        </div>
+
+                    </th>
+
+                    <th style="width: 50%;">
+
+                        <div class="cadastro">
+                            <div class="login"> <br>
+                                <legend>Cadastrar</legend>
+                                <br><br>
+                                <form action="/html/login_singin.html" method="post">
+                                    <input type="text" class="inform" id="nome" placeholder="Nome" name="nome"><br>
+                                    <input type="text" class="inform" id="sobrenome" placeholder="Sobrenome" name="sobrenome"><br>
+                                    <input type="text" class="inform" id="e-mail" placeholder="E-mail" name="email"><br>
+                                    <input type="password" class="inform" id="senha" placeholder="Senha" name="senha"><br>
+                                    <input type="password" class="inform" id="con_senha" placeholder="Confirmar senha" name="con_senha"><br>
+                                    <label id="error" class="error">Senhas se diferem</label>
+                                    <br><br><br><br>
+
+                                    <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                                        <input type="reset" class="limpar" id="limpar" placeholder="Limpar" name="limpar"> 
+                                        
+                                        <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
+                                    </div>
+                                </form>
+
+                                <br>
+
+                                <div class="login_alternative">
+                                    <img src="/images/loging_alternate.svg" class="login_alternatives">
+                                </div>
+                            </div>
+                        </div>
+
+                    </th>
+
+                </tr>
+            </table>
+        </main>
+
+
+
+
+
+
+
+        <!-- RODAPÉ -->
+
+        <br><br>
+
+        <footer>
+            <div class="tbfooter"><br><br>
+                    <div class="thfooter">Contate-nos</div>
+                        <br><br>
+                        <a href="https://www.instagram.com/" target="_blank" class="links"> Instagram </a> <br>
+                        <a href="https://twitter.com/i/flow/login" target="_blank" class="links"> Twitter </a> <br>
+                        <a href="https://www.youtube.com/" target="_blank" class="links">Youtube</a> <br>
+                        <l style="font-size: 1.5em;">Nothing_gallery@gmail.com</l>
+                    </div>
+            </div>
+        </footer>
+    </html>

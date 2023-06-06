@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Voga;
+    src: url(/font/CDType\ -\ Voga\ Medium.otf);
+}
+
+body {
+    margin: 0;
+    height: auto;
+    background-image: url(/images/fundo.svg);
+    background-size: 300vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: auto;
+}
+
+header {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 9vh;
+    top: 0vh;
+    left: 0vh;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Voga;
+    text-align: left;
+    justify-content: space-evenly;
+    padding-bottom: 1vh;
+    white-space: nowrap;
+    border-bottom: 0.5vh solid #ffffff;
+    z-index: 2;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tableHD {
+    border-spacing: 13em 0;
+}
+    .searchbar {
+        width: 30vw;
+        height: 1vh;
+        font-size: 1em;
+        padding: 10px;
+        background-color: none;
+    }
+    .user {
+        height: 50px;
+        width: 50px;
+    }
+
+.login
+{
+    background-color: #000000;
+    height: 50vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    color: #ffffff;
+    border-radius: 35px;
+}
+
+.cadastro {
+    background-color: #000000;
+    height: 67vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    color: #ffffff;
+    border-radius: 35px;
+}
+
+    legend
+    {
+        font-size: 3em;
+        flex-direction: column;
+        color: #ffff;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    form
+    {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-content: space-around;
+        flex-direction: column;
+        width: 70%;
+        font-size: 10px;
+        height: 40vh;
+        
+    }
+
+        .inform
+        {
+            width: 100%;
+            height: 4vh;
+            border-radius: 5px;
+            border: none;
+            padding-left: 1vh;
+        }
+
+        .entrar {
+            font-family: sans-serif;
+            border-style: none;
+            font-size: 2em;
+            background-color: #4b4b4b;
+            color: #ffffff;
+            width: 6vw;
+        }
+        .limpar {
+            font-family: sans-serif;
+            border-style: none;
+            font-size: 2em;
+            background-color: #4b4b4b;
+            color: #ffffff;
+        }
+            .entrar, .limpar:hover {
+                cursor: pointer;
+            }
+
+        .login_alternatives
+        {
+            height: 13vh;
+            width: 100%;
+            
+        }
+
+footer {
+    width: 100%;
+    height: 30vh;
+    background-color: #18181870;
+    color: #ffffff;
+    font-family: Voga;
+    display: flex;
+    align-items: center;
+}
+    .tbfooter{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .thfooter {
+        font-size: 2em;
+    }
+    .links {
+        font-size: 1.5em;
+        color: #bebebe;
+        text-decoration: none;
+
+    }
+
+.error {
+    font-size: 2em;
+    font-family: Voga;
+    color: rgb(255, 157, 157);
+    opacity: 0;
+}
