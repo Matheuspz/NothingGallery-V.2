@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nothing Gallery</title>
-        <link rel="stylesheet" href="/css/login_singin.css">
-        <script src="/javacript/login_singin.js"></script>
+        <link rel="stylesheet" href="../css/login_singin.css">
+        <script src="../javacript/login_singin.js"></script>
     </head>
     <body>
 
@@ -15,7 +15,7 @@
         <header> 
             <table class="tableHD">
                 <tr> 
-                    <th> <a href="/html/index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a> </th>
+                    <th> <a href="../html/index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a> </th>
                     <th> <div class="searchbar"></div> </th> 
 
                 </tr>
@@ -33,7 +33,7 @@
                         <div class="login"> <br>
                             <legend>Entrar</legend>
                             <br>
-                            <form action="/html/login_singin.html" method="post">
+                            <form action="../html/login_singin.html" method="post">
                                 <input type="text" class="inform" id="e-mail" placeholder="E-mail" name="email"><br>
                                 <input type="password" class="inform" id="senha" placeholder="senha" name="senha"><br>
                                 <div style="text-align: left;">
@@ -41,17 +41,14 @@
                                 </div>
                                 
                                 <br><br><br>
-
-                                <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                                    <input type="reset" class="limpar" id="limpar" placeholder="Limpar" name="limpar"> 
-                                    
-                                    <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
-                                </div>
                             </form>
+                            <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                                <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
+                            </div>
 
 
                             <div class="login_alternative">
-                                <img src="/images/loging_alternate.svg" class="login_alternatives">
+                                <img src="../images/loging_alternate.svg" class="login_alternatives">
                             </div>
                         </div>
 
@@ -63,26 +60,23 @@
                             <div class="login"> <br>
                                 <legend>Cadastrar</legend>
                                 <br><br>
-                                <form action="/html/login_singin.html" method="post">
+                                <form action="../html/login_singin.html" method="post">
                                     <input type="text" class="inform" id="nome" placeholder="Nome" name="nome"><br>
                                     <input type="text" class="inform" id="sobrenome" placeholder="Sobrenome" name="sobrenome"><br>
                                     <input type="text" class="inform" id="e-mail" placeholder="E-mail" name="email"><br>
                                     <input type="password" class="inform" id="senha" placeholder="Senha" name="senha"><br>
                                     <input type="password" class="inform" id="con_senha" placeholder="Confirmar senha" name="con_senha"><br>
                                     <label id="error" class="error">Senhas se diferem</label>
-                                    <br><br><br><br>
+                                    <br>
 
-                                    <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                                        <input type="reset" class="limpar" id="limpar" placeholder="Limpar" name="limpar"> 
-                                        
-                                        <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
-                                    </div>
                                 </form>
-
+                                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                                    <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
+                                </div>
                                 <br>
 
                                 <div class="login_alternative">
-                                    <img src="/images/loging_alternate.svg" class="login_alternatives">
+                                    <img src="../images/loging_alternate.svg" class="login_alternatives">
                                 </div>
                             </div>
                         </div>

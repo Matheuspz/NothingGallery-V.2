@@ -1,12 +1,12 @@
 @font-face {
     font-family: Voga;
-    src: url(/font/CDType\ -\ Voga\ Medium.otf);
+    src: url(../font/Voga_Medium.otf);
 }
 
 body {
     margin: 0;
     height: auto;
-    background-image: url(/images/fundo.svg);
+    background-image: url(../images/fundo.svg);
     background-size: 300vh;
 }
 

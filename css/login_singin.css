@@ -1,12 +1,12 @@
 @font-face {
     font-family: Voga;
-    src: url(/font/CDType\ -\ Voga\ Medium.otf);
+    src: url(../font/CDType\ -\ Voga\ Medium.otf);
 }
 
 body {
     margin: 0;
     height: auto;
-    background-image: url(/images/fundo.svg);
+    background-image: url(../images/fundo.svg);
     background-size: 300vh;
 }
 
@@ -119,7 +119,7 @@ a {
         .entrar {
             font-family: sans-serif;
             border-style: none;
-            font-size: 2em;
+            font-size: 1.5em;
             background-color: #4b4b4b;
             color: #ffffff;
             width: 6vw;
