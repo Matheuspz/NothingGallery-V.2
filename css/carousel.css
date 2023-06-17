@@ -1,97 +1,66 @@
 
+.mySlides {
+  display: none
+}
+
+/* Slideshow container */
 .slideshow-container {
-    width: 40vw;
-    position: relative;
-    margin: auto;
-    top: 8%;
-  }
-  
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-  .mySlides {
-    display: none;
-  }
-  .mySlidesTmpSp {
-    position: relative;
-    width: 100%; 
-    height: 100%; 
-  }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-  .container_plusSlides {
-    position: relative;
-    height: 5vh;
-    width: 24.5vw;
-    left: 15vh;  
-  }
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #000000cc;
+}
 
-  .prev {
-    cursor: pointer;
-    position: absolute;
-    width: 2.5vw;
-    height: 4vh;
-    padding-top: 1vh;
-    top: 0;
-    left: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  .next {
-    cursor: pointer;
-    position: absolute;
-    width: 2.5vw;
-    height: 4vh;
-    padding-top: 1vh;
-    top: 0;
-    right: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 2.5em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 97.6%;
+  text-align: center;
+  top: 98%;
+}
 
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
+.mySlidesTmpSp {
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+}
 
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
-  .text {
-    color: #ffffff;
-    font-size: 2em;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    font-family: Voga;
-  }
-  
-  .text_quadros {
-    color: #ffffff;
-    font-size: 2em;
-    bottom: -50px;
-    width: 100%;
-    text-align: center;
-    font-family: Voga;
-  }
-
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
   
 
 
@@ -106,8 +75,7 @@
 }
 
   .mySlidesQDR {
-    display: none;
-    width: 70%;
+    width: 100%;
     height: 100%;
   }
   .mySlidesSUR {
@@ -117,92 +85,21 @@
   }
 
 
-  .mySlidesTmp {
-    width: 70%;
-    height: 100%;
-  }
-
   .quadro_slide {
-    width: 70%;
-    height: 100%;
+    width: 60%;
+    height: 70%;
     border: 3px solid #ffffff;
   }
 
-  .prev_next_grunge {
-    height: 15vh; 
-    width: 10vh;
-    
+  .text_quadros {
+    color: #ffffff;
+    font-size: 1.5em;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    font-family: Voga;
   }
+}
 
-  .container_plusSlidesGRN {
-    position: relative;
-    height: 5vh;
-    width: 24vw;
-    left: 2.7vw;
-  }
 
-    .prev_grunge {
-      cursor: pointer;
-      position: absolute;
-      width: 2.5vw;
-      height: 4vh;
-      padding-top: 1vh;
-      top: 0;
-      left: 0;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    .next_grunge {
-      cursor: pointer;
-      position: absolute;
-      width: 2.5vw;
-      height: 4vh;
-      padding-top: 1vh;
-      top: 0;
-      right: 0;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-
-    .prev_grunge:hover, .next_grunge:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-
-    .next_grunge {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-  @media screen and (min-width: 1920px) {
-    .prev_grunge, .next_grunge {
-      cursor: pointer;
-      position: absolute;
-      top: 85vh;
-      width: auto;
-      margin: 75vh;
-      right: 45vh;
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
-    .prev_grunge:hover, .next_grunge:hover {
-      background-color: rgba(0,0,0,0.8);
-    }
-    .next_grunge {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-  }
 

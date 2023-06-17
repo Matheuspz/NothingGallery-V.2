@@ -19,7 +19,6 @@ main {
 
 header {
     display: block;
-    position: fixed;
     width: 100%;
     height: 9vh;
     top: 0vh;
@@ -99,11 +98,35 @@ a {
     .h1grunge {
         font-family: Voga;
         color: white; 
-        font-size: 3em;
+        font-size: 3.5em;
+        margin: 0;
     }
 
 
 
+.tableQuadros {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.tdQuadros {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
 
 footer {
     width: 100%;
