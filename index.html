@@ -5,12 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nothing Gallery</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/carousel.css">
-    <script src="../javacript/carousel.js"></script>
-    <script src="../javacript/comprar_inicio.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <script src="javacript/carousel.js"></script>
+    <script src="javacript/comprar_inicio.js"></script>
 </head>
 
+<style>
+    @font-face {
+        font-family: Voga;
+        src: url(font/Voga_Medium.otf);
+    }
+    body {
+        margin: 0;
+        height: auto;
+        background-image: url(images/fundo.svg);
+        background-size: 300vh;
+    }
+    .TS_th1 {
+        width: 45%;
+        height: 100%;
+        background-image: url(images/quadro_borrado1.svg);
+        background-size: cover;
+        font-size: 4em;
+        color: #F8FD0C;
+    }
+</style>
 
 <body>
 
@@ -21,7 +41,7 @@
             <tr>
                 <th>
                     <div style="width: 100%; height: 100%; position: relative;"> 
-                        <a href="../html/index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a>
+                        <a href="html/index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a>
                     </div>
                 </th>
                 <th> <div class="searchbar"></div> </th> 
@@ -36,7 +56,7 @@
 
         <table class="tableSpecial">
             <tr>
-                <th class="TS_th1"> Quadros em destaque <img src="../images/estrela.png" alt="estrela" class="estrela"></th>
+                <th class="TS_th1"> Quadros em destaque <img src="images/estrela.png" alt="estrela" class="estrela"></th>
                 <th class="TS_th2">
 
                     <!-- SLIDESHOW DOS QUADROS-->
@@ -45,23 +65,23 @@
                     <div class="slideshow-container" id="quadros0">
 
                         <div class="mySlidesTmpSp" id="templateQdr">
-                            <img src="../images/quadro1.svg" style="width: 80%;">
+                            <img src="images/quadro1.svg" style="width: 80%;">
                             <div class="text"> Rain England </div>
                         </div>
 
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
-                            <img src="../images/quadro1.svg" style="width: 80%">
+                            <img src="images/quadro1.svg" style="width: 80%">
                             <div class="text"> Rain England </div>
                         </div>
                     
                         <div class="mySlides fade">
-                            <img src="../images/quadro2.svg" style="width: 80%">
+                            <img src="images/quadro2.svg" style="width: 80%">
                             <div class="text"> Taiga Florest </div>
                         </div>
                     
                         <div class="mySlides fade">
-                            <img src="../images/quadro3.svg" style="width: 80%">
+                            <img src="images/quadro3.svg" style="width: 80%">
                             <div class="text"> Cubic Penguin </div>
                         </div>
                     
@@ -82,8 +102,8 @@
         <div class="divspecial">
             <table class="table_rodapespecial">
                 <tr>
-                    <th> <img src="../images/parcelamento.png" alt="parcelamento" style="width: 40%; height: 40%;"> </th>
-                    <th> <img src="../images/entregaBr.png" alt="entrega" style="width: 35%; height: 35%;"></th>
+                    <th> <img src="images/parcelamento.png" alt="parcelamento" style="width: 40%; height: 40%;"> </th>
+                    <th> <img src="images/entregaBr.png" alt="entrega" style="width: 35%; height: 35%;"></th>
                 </tr>
             </table>
         </div>
@@ -117,8 +137,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/1.html">
-                                <img src="../images/Grunge/Brilliant sky.jpg" class="quadro_slide">
+                            <a href = "html/quadros/1.html">
+                                <img src="images/Grunge/Brilliant sky.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Brilliant Sky R$300,00 </div>
                             </a>
                         </div>
@@ -127,8 +147,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/2.html">
-                                <img src="../images/Grunge/Lighting city.jpg" class="quadro_slide">
+                            <a href = "html/quadros/2.html">
+                                <img src="images/Grunge/Lighting city.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Lighting City R$ 250,00  </div>
                             </a>
                         </div>
@@ -136,8 +156,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/3.html">
-                                <img src="../images/Grunge/Lost and forgotten.jpg" class="quadro_slide">
+                            <a href = "html/quadros/3.html">
+                                <img src="images/Grunge/Lost and forgotten.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Lost and forgotten R$ 350,00 </div>
                             </a>
                         </div>  
@@ -148,8 +168,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/4.html">
-                                <img src="../images/Grunge/Meteor shower.jpg" class="quadro_slide">
+                            <a href = "html/quadros/4.html">
+                                <img src="images/Grunge/Meteor shower.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Meteor shower R$ 250,00 </div>
                             </a>
                         </div>
@@ -157,8 +177,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/5.html">
-                                <img src="../images/Grunge/Way for home.jpg" class="quadro_slide">
+                            <a href = "html/quadros/5.html">
+                                <img src="images/Grunge/Way for home.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Way for home R$ 300,00  </div>
                             </a>
                         </div>
@@ -166,8 +186,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/6.html">
-                                <img src="../images/Grunge/Way of river.jpg" class="quadro_slide">
+                            <a href = "html/quadros/6.html">
+                                <img src="images/Grunge/Way of river.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Way of river R$ 150,00  </div>
                             </a>
                         </div>   
@@ -200,8 +220,8 @@
     
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/1.html">
-                                <img src="../images/Surrealismo/Giant lampshade.jpg" class="quadro_slide">
+                            <a href = "html/quadros/1.html">
+                                <img src="images/Surrealismo/Giant lampshade.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Giant lampshade R$ 250,00 </div>
                             </a>
                         </div>
@@ -210,8 +230,8 @@
     
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/2.html">
-                                <img src="../images/Surrealismo/Horned creature.jpg" class="quadro_slide">
+                            <a href = "html/quadros/2.html">
+                                <img src="images/Surrealismo/Horned creature.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Horned creature R$ 300,00  </div>
                             </a>
                         </div>
@@ -219,8 +239,8 @@
     
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/3.html">
-                                <img src="../images/Surrealismo/Light up.jpg" class="quadro_slide">
+                            <a href = "html/quadros/3.html">
+                                <img src="images/Surrealismo/Light up.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Light up R$ 350,00 </div>
                             </a>
                         </div>  
@@ -231,8 +251,8 @@
     
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/4.html">
-                                <img src="../images/Surrealismo/Robots are here.jpg" class="quadro_slide">
+                            <a href = "html/quadros/4.html">
+                                <img src="images/Surrealismo/Robots are here.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Robots are here R$ 300,00 </div>
                             </a>
                         </div>
@@ -240,8 +260,8 @@
     
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/5.html">
-                                <img src="../images/Surrealismo/Skyblock.jpg" class="quadro_slide">
+                            <a href = "html/quadros/5.html">
+                                <img src="images/Surrealismo/Skyblock.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Skyblock R$ 250,00  </div>
                             </a>
                         </div>
@@ -249,8 +269,8 @@
     
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/6.html">
-                                <img src="../images/Surrealismo/Stop in the time.jpg" class="quadro_slide">
+                            <a href = "html/quadros/6.html">
+                                <img src="images/Surrealismo/Stop in the time.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Stop in the time R$ 150,00  </div>
                             </a>
                         </div>   
@@ -283,8 +303,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/1.html">
-                                <img src="../images/Fotorrealista/Abraham.jpg" class="quadro_slide">
+                            <a href = "html/quadros/1.html">
+                                <img src="images/Fotorrealista/Abraham.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Abraham R$ 350,00 </div>
                             </a>
                         </div>
@@ -293,8 +313,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/2.html">
-                                <img src="../images/Fotorrealista/Chad claus.jpg" class="quadro_slide">
+                            <a href = "html/quadros/2.html">
+                                <img src="images/Fotorrealista/Chad claus.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Santa Claus R$ 250,00  </div>
                             </a>
                         </div>
@@ -302,8 +322,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/3.html">
-                                <img src="../images/Fotorrealista/King Mercury.jpg" class="quadro_slide">
+                            <a href = "html/quadros/3.html">
+                                <img src="images/Fotorrealista/King Mercury.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Freddie Mercury R$ 200,00 </div>
                             </a>
                         </div>  
@@ -314,8 +334,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/4.html">
-                                <img src="../images/Fotorrealista/Mescla Jackson.jpg" class="quadro_slide">
+                            <a href = "html/quadros/4.html">
+                                <img src="images/Fotorrealista/Mescla Jackson.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Michael Jackson R$ 300,00 </div>
                             </a>
                         </div>
@@ -323,8 +343,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/5.html">
-                                <img src="../images/Fotorrealista/Splash.jpg" class="quadro_slide">
+                            <a href = "html/quadros/5.html">
+                                <img src="images/Fotorrealista/Splash.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Slash R$ 250,00  </div>
                             </a>
                         </div>
@@ -332,8 +352,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/6.html">
-                                <img src="../images/Fotorrealista/Visions of war.jpg" class="quadro_slide">
+                            <a href = "html/quadros/6.html">
+                                <img src="images/Fotorrealista/Visions of war.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Tommy Shelby R$ 150,00  </div>
                             </a>
                         </div>   
@@ -366,8 +386,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/1.html">
-                                <img src="../images/Analogia/Christmas day.jpg" class="quadro_slide">
+                            <a href = "html/quadros/1.html">
+                                <img src="images/Analogia/Christmas day.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Christmas day R$ 250,00 </div>
                             </a>
                         </div>
@@ -376,8 +396,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/2.html">
-                                <img src="../images/Analogia/Alone street lamp.jpg" class="quadro_slide">
+                            <a href = "html/quadros/2.html">
+                                <img src="images/Analogia/Alone street lamp.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Alone street lamp R$ 300,00  </div>
                             </a>
                         </div>
@@ -385,8 +405,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/3.html">
-                                <img src="../images/Analogia/Litlle Autumn rain.jpg" class="quadro_slide">
+                            <a href = "html/quadros/3.html">
+                                <img src="images/Analogia/Litlle Autumn rain.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Little Autumn R$ 350,00 </div>
                             </a>
                         </div>  
@@ -397,8 +417,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/4.html">
-                                <img src="../images/Analogia/Thanksgiving.jpg" class="quadro_slide">
+                            <a href = "html/quadros/4.html">
+                                <img src="images/Analogia/Thanksgiving.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Thanksgiving R$ 350,00 </div>
                             </a>
                         </div>
@@ -406,8 +426,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/5.html">
-                                <img src="../images/Analogia/Snow and Rain.jpg" class="quadro_slide">
+                            <a href = "html/quadros/5.html">
+                                <img src="images/Analogia/Snow and Rain.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Snow and Rain R$ 250,00  </div>
                             </a>
                         </div>
@@ -415,8 +435,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/6.html">
-                                <img src="../images/Analogia/Valentine_s day in Winter.jpg" class="quadro_slide">
+                            <a href = "html/quadros/6.html">
+                                <img src="images/Analogia/Valentine_s day in Winter.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Valentine day in Winter R$ 150,00  </div>
                             </a>
                         </div>   
@@ -449,8 +469,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/1.html">
-                                <img src="../images/Cubismo/Album rocket.jpg" class="quadro_slide">
+                            <a href = "html/quadros/1.html">
+                                <img src="images/Cubismo/Album rocket.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Album rocket R$ 300,00 </div>
                             </a>
                         </div>
@@ -459,8 +479,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/2.html">
-                                <img src="../images/Cubismo/Bugged houses.jpg" class="quadro_slide">
+                            <a href = "html/quadros/2.html">
+                                <img src="images/Cubismo/Bugged houses.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Bugged houses R$ 350,00  </div>
                             </a>
                         </div>
@@ -468,8 +488,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/3.html">
-                                <img src="../images/Cubismo/Cubic temple.jpg" class="quadro_slide">
+                            <a href = "html/quadros/3.html">
+                                <img src="images/Cubismo/Cubic temple.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Cubic temple R$ 150,00 </div>
                             </a>
                         </div>  
@@ -480,8 +500,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/4.html">
-                                <img src="../images/Cubismo/Horizon pink.jpg" class="quadro_slide">
+                            <a href = "html/quadros/4.html">
+                                <img src="images/Cubismo/Horizon pink.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Horizon pink R$ 300,00 </div>
                             </a>
                         </div>
@@ -489,8 +509,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/5.html">
-                                <img src="../images/Cubismo/Looking at the horizon.jpg" class="quadro_slide">
+                            <a href = "html/quadros/5.html">
+                                <img src="images/Cubismo/Looking at the horizon.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Looking at the horizon R$ 250,00  </div>
                             </a>
                         </div>
@@ -498,8 +518,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/6.html">
-                                <img src="../images/Cubismo/Goat.jpg" class="quadro_slide">
+                            <a href = "html/quadros/6.html">
+                                <img src="images/Cubismo/Goat.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Goat R$ 150,00  </div>
                             </a>
                         </div>   
@@ -532,8 +552,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/1.html">
-                                <img src="../images/Variado/Alley sold.jpg" class="quadro_slide">
+                            <a href = "html/quadros/1.html">
+                                <img src="images/Variado/Alley sold.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Alley sold R$ 300,00 </div>
                             </a>
                         </div>
@@ -542,8 +562,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/2.html">
-                                <img src="../images/Variado/Camp of flowers.jpg" class="quadro_slide">
+                            <a href = "html/quadros/2.html">
+                                <img src="images/Variado/Camp of flowers.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Camp of flowers R$ 250,00  </div>
                             </a>
                         </div>
@@ -551,8 +571,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/3.html">
-                                <img src="../images/Variado/Conifers florest.jpg" class="quadro_slide">
+                            <a href = "html/quadros/3.html">
+                                <img src="images/Variado/Conifers florest.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Conifers florest R$ 150,00 </div>
                             </a>
                         </div>  
@@ -563,8 +583,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/4.html">
-                                <img src="../images/Variado/Crow.jpg" class="quadro_slide">
+                            <a href = "html/quadros/4.html">
+                                <img src="images/Variado/Crow.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Crow R$ 300,00 </div>
                             </a>
                         </div>
@@ -572,8 +592,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/5.html">
-                                <img src="../images/Variado/Elegant goat.jpg" class="quadro_slide">
+                            <a href = "html/quadros/5.html">
+                                <img src="images/Variado/Elegant goat.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Elegant goat R$ 350,00  </div>
                             </a>
                         </div>
@@ -581,8 +601,8 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "../html/quadros/6.html">
-                                <img src="../images/Variado/Farm.jpg" class="quadro_slide">
+                            <a href = "html/quadros/6.html">
+                                <img src="images/Variado/Farm.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Farm R$ 200,00  </div>
                             </a>
                         </div>   
@@ -612,7 +632,7 @@
                     <l style="font-size: 1.5em;">Nothing_gallery@gmail.com</l>
                     
                     
-                    <a href="../html/login_singin.html">a</a>
+                    <a href="html/login_singin.html">a</a>
                 
                 </div>
         </div>
