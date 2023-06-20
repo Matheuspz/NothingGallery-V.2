@@ -87,8 +87,8 @@
 
   .quadro_slide {
     width: 60%;
-    height: 70%;
     border: 3px solid #ffffff;
+    aspect-ratio: 3/4;
   }
 
   .text_quadros {
@@ -99,7 +99,7 @@
     text-align: center;
     font-family: Voga;
   }
-}
+
 
 
 
