@@ -7,7 +7,7 @@ body {
     margin: 0;
     height: auto;
     background-image: url(../images/fundo.svg);
-    background-size: 300vh;
+    background-size: cover;
 }
 
 main {

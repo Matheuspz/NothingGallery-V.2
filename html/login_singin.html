@@ -33,7 +33,7 @@
                         <div class="login"> <br>
                             <legend>Entrar</legend>
                             <br>
-                            <form action="../html/login_singin.html" method="post">
+                            <form action="/html/login_singin.html" method="post">
                                 <input type="text" class="inform" id="e-mail" placeholder="E-mail" name="email"><br>
                                 <input type="password" class="inform" id="senha" placeholder="senha" name="senha"><br>
                                 <div style="text-align: left;">
@@ -44,7 +44,7 @@
                             </form>
 
                             <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                                <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
+                                <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar" onclick="foda();">
                             </div>
 
 
@@ -61,20 +61,21 @@
                             <div class="login"> <br>
                                 <legend>Cadastrar</legend>
                                 <br><br>
-                                <form action="../html/login_singin2.html" method="post">
-                                    <input type="text" class="inform" id="nome" placeholder="Nome" name="nome"><br>
-                                    <input type="text" class="inform" id="sobrenome" placeholder="Sobrenome" name="sobrenome"><br>
-                                    <input type="text" class="inform" id="e-mail" placeholder="E-mail" name="email"><br>
-                                    <input type="password" class="inform" id="senha" placeholder="Senha" name="senha"><br>
-                                    <input type="password" class="inform" id="con_senha" placeholder="Confirmar senha" name="con_senha"><br>
+                                <form name="cadastroForm" action="#" method="post" onsubmit="return cValidar();">
+
+                                    <input type="text" class="inform" id="cadastroNome" placeholder="Nome" name="cadastroNome" ><br>
+                                    <input type="text" class="inform" id="cadastroSobrenome" placeholder="Sobrenome" name="cadastroSobrenome" ><br>
+                                    <input type="text" class="inform" id="cadastroEmail" placeholder="E-mail" name="cadastroEmail" ><br>
+                                    <input type="password" class="inform" id="cadastroSenha" placeholder="Senha" name="cadastroSenha" ><br>
+                                    <input type="password" class="inform" id="cadastroConfSenha" placeholder="Confirmar senha" name="cadastroConfSenha" ><br>
                                     <label id="error" class="error">Senhas se diferem</label>
                                     <br>
 
+                                    <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                                        <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
+                                    </div>
+
                                 </form>
-                               
-                                <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                                    <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
-                                </div>
 
                                 <br>
 

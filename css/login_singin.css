@@ -136,8 +136,8 @@ a {
         .error {
             font-size: 2em;
             font-family: Voga;
-            color: rgb(255, 157, 157);
-            opacity: 1;
+            color: #ff9d9d;
+            opacity: 0;
         }
 
         .login_alternatives {
