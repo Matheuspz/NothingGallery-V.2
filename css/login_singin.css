@@ -1,6 +1,6 @@
 @font-face {
     font-family: Voga;
-    src: url(../font/CDType\ -\ Voga\ Medium.otf);
+    src: url(../font/Voga_Medium.otf);
 }
 
 body {
@@ -21,13 +21,12 @@ main {
 
 header {
     width: 100%;
-    height: 9vh;
+    height: 8vmin;
     top: 0vh;
     left: 0vh;
     background-color: #000000;
     color: #ffffff;
     font-family: Voga;
-    text-align: left;
     justify-content: space-evenly;
     padding-bottom: 1vh;
     white-space: nowrap;
@@ -45,10 +44,10 @@ a {
     border-spacing: 13em 0;
 }
     .searchbar {
-        width: 30vw;
-        height: 1vh;
+        width: 30vmin;
+        height: 1vmin;
         font-size: 1em;
-        padding: 10px;
+        padding: 1vmin;
         background-color: none;
     }
     .user {
@@ -59,26 +58,28 @@ a {
 .login
 {
     background-color: #000000;
-    height: 50vh;
-    width: 90%;
+    height: 50vmin;
+    width: 50vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     color: #ffffff;
     border-radius: 35px;
+    font-family: Voga;
 }
 
 .cadastro {
     background-color: #000000;
-    height: 67vh;
-    width: 100%;
+    height: 60vmin;
+    width: 55vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     color: #ffffff;
     border-radius: 35px;
+    font-family: Voga;
 }
 
     legend
@@ -99,16 +100,16 @@ a {
         justify-items: center;
         align-content: space-around;
         flex-direction: column;
-        width: 70%;
-        font-size: 10px;
-        height: 40vh;
+        width: 36vmin;
+        font-size: 0.6rem;
+        height: 50vmin;
         
     }
 
         .inform
         {
             width: 100%;
-            height: 4vh;
+            height: 4vmin;
             border-radius: 5px;
             border: none;
             padding-left: 1vh;
@@ -120,28 +121,26 @@ a {
             font-size: 1.5em;
             background-color: #4b4b4b;
             color: #ffffff;
-            width: 6vw;
+            width: 10vmin;
+            height: 3vmin;
         }
-        .limpar {
-            font-family: sans-serif;
-            border-style: none;
-            font-size: 2em;
-            background-color: #4b4b4b;
-            color: #ffffff;
-        }
-            .entrar, .limpar:hover {
+            .entrar:hover {
                 cursor: pointer;
             }
 
         .error {
-            font-size: 2em;
+            font-size: 1.5em;
             font-family: Voga;
             color: #ff9d9d;
             opacity: 0;
+            text-align: left;
+            height: 2vmin;
+            width: 50vmin;
         }
+        
 
         .login_alternatives {
-            height: 13vh;
+            height: 12vmin;
             width: 100%;
         }
 

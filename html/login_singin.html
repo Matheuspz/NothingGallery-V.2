@@ -15,13 +15,18 @@
         <header> 
             <table class="tableHD">
                 <tr> 
-                    <th> <a href="../index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a> </th>
-                    <th> <div class="searchbar"></div> </th> 
+                    <th>
+                        <div style="width: 100%; height: 100%; position: relative;"> 
+                            <a href="../index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a>
+                        </div>
+                    <th> 
+                        <div class="searchbar"></div> 
+                    </th> 
 
                 </tr>
             </table>
         </header>
-        <br><br><br><br>
+        <br><br><br>
 
 
         <main>
@@ -33,19 +38,22 @@
                         <div class="login"> <br>
                             <legend>Entrar</legend>
                             <br>
-                            <form action="/html/login_singin.html" method="post">
-                                <input type="text" class="inform" id="e-mail" placeholder="E-mail" name="email"><br>
-                                <input type="password" class="inform" id="senha" placeholder="senha" name="senha"><br>
+                            <form name="loginForm" action="#" method="post" onsubmit="return lValidar();">
+                                <input type="text" class="inform" id="loginEmail" placeholder="E-mail" name="loginEmail"><br>
+                                <input type="password" class="inform" id="loginSenha" placeholder="Senha" name="loginSenha"><br>
                                 <div style="text-align: left;">
-                                    <a href="#" target="_self" class="links">Esqueceu senha?</a>
+                                    <a href="#" target="_self" class="links" style="font-family: none;">Esqueceu senha?</a>
                                 </div>
+                                <label id="lError" class="error" style="font-family: none;"></label>
                                 
-                                <br><br><br>
+                                <br><br>
+
+                                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                                    <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar">
+                                </div>
                             </form>
 
-                            <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                                <input type="submit" class="entrar" id="entrar" placeholder="Entrar" name="entrar" onclick="foda();">
-                            </div>
+                            
 
 
                             <div class="login_alternative">
@@ -68,7 +76,7 @@
                                     <input type="text" class="inform" id="cadastroEmail" placeholder="E-mail" name="cadastroEmail" ><br>
                                     <input type="password" class="inform" id="cadastroSenha" placeholder="Senha" name="cadastroSenha" ><br>
                                     <input type="password" class="inform" id="cadastroConfSenha" placeholder="Confirmar senha" name="cadastroConfSenha" ><br>
-                                    <label id="error" class="error">Senhas se diferem</label>
+                                    <label id="cError" class="error"></label>
                                     <br>
 
                                     <div style="display: flex; flex-direction: row; justify-content: space-around;">
@@ -77,7 +85,7 @@
 
                                 </form>
 
-                                <br>
+                                
 
                                 <div class="login_alternative">
                                     <img src="../images/loging_alternate.svg" class="login_alternatives">
