@@ -32,6 +32,15 @@ header {
     border-bottom: 0.5vh solid #ffffff;
     z-index: 2;
 }
+    .btnEntrar {
+        background-color: #4d4d4d;
+        color: #ffffff;
+        width: 20vmin;
+        height: 5vmin;
+        font-family: Voga;
+        font-size: 1.5rem;
+        cursor: pointer;
+    } 
 
 a {
     color: #ffffff;
@@ -43,7 +52,7 @@ a {
     border-spacing: 13em 0;
 }
     .searchbar {
-        width: 30vmin;
+        width: 35vmin;
         height: 1vmin;
         font-size: 1em;
         padding: 1vmin;
