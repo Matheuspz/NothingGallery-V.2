@@ -40,7 +40,7 @@
             <tr>
                 <th>
                     <div style="width: 100%; height: 100%; position: relative;"> 
-                        <a href="html/index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a>
+                        <a href="index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a>
                     </div>
                 </th>
                 <th> <div class="searchbar"></div> </th> 
@@ -139,29 +139,29 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "html/quadros/1.html">
+                            <button onclick="Enviar(1);" class="buttonQuadro">
                                 <img src="images/Grunge/Brilliant sky.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Brilliant Sky R$300,00 </div>
-                            </a>
+                            </button>
                         </div>
                         <br>
                     </td>
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "html/quadros/2.html">
+                            <button onclick="Enviar(2);" class="buttonQuadro">
                                 <img src="images/Grunge/Lighting city.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Lighting City R$ 250,00  </div>
-                            </a>
+                            </button>
                         </div>
                     </td>
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "html/quadros/3.html">
+                            <button onclick="Enviar(3);" class="buttonQuadro">
                                 <img src="images/Grunge/Lost and forgotten.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Lost and forgotten R$ 350,00 </div>
-                            </a>
+                            </button>
                         </div>  
                     </td>  
                 </tr>
@@ -170,28 +170,28 @@
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "html/quadros/4.html">
+                            <button onclick="Enviar(4);" class="buttonQuadro">
                                 <img src="images/Grunge/Meteor shower.jpg" class="quadro_slide">
                                 <div class="text_quadros"> Meteor shower R$ 250,00 </div>
-                            </a>
+                            </button>
                         </div>
                     </td>
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "html/quadros/5.html">
+                            <button onclick="Enviar(1);" class="buttonQuadro">
                                 <img src="images/Grunge/Way for home.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Way for home R$ 300,00  </div>
-                            </a>
+                            </button>
                         </div>
                     </td>
 
                     <td class="tdQuadros">
                         <div class="mySlidesQDR fade">
-                            <a href = "html/quadros/6.html">
+                            <button onclick="Enviar(1);" class="buttonQuadro">
                                 <img src="images/Grunge/Way of river.jpg" class="quadro_slide">
                                 <div class="text_quadros">  Way of river R$ 150,00  </div>
-                            </a>
+                            </button>
                         </div>   
                     </td>    
 
@@ -641,4 +641,10 @@
     </footer>
 
 </body>
+<script>
+    function Enviar(N)
+    {
+        window.open("comprar.php?cod="+N,"_blank")
+    }
+</script>
 </html>

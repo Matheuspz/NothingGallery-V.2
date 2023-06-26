@@ -120,7 +120,11 @@ a {
     justify-content: center;
 }
 
-
+.buttonQuadro {
+    background-color: #000000e5;
+    border: none;
+    cursor: pointer;
+}
 
 
 
