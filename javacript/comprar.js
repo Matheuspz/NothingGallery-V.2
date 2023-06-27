@@ -1,20 +1,21 @@
 
-
-var x = 1;
+var y = ["P","M","G"];
+var z = 0;
 
 document.getElementById('qtd').innerHTML = x;
+document.getElementById('tamanho').innerHTML = "G";
 
-function aumentar() {
-  document.getElementById('qtd').innerHTML = ++x;
+function aumentarTM() {
+  if(z != 2){
+    ++z;
+    document.getElementById('tamanho').innerHTML = y[z];
+  }
 }
-
-function diminuir() {
-    if(x != 1){
-        document.getElementById('qtd').innerHTML = --x;
+function diminuirTM() {
+    if(z > 0) {
+      --z;
+      document.getElementById('tamanho').innerHTML = y[z];
     }
+    
 }
-
-
-
-
 

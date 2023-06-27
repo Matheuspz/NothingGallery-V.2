@@ -4,7 +4,7 @@
     
     // CONEXÃO COM A BASE DE DADOS: verifique sempre o dbname
     try{
-        $pdo = new PDO("mysql:dbname=nothin_gallery_copia;host=localhost;charset=utf8","root","");
+        $pdo = new PDO("mysql:dbname=nothing_galley;host=localhost;charset=utf8","root","");
     }
     catch(PDOException $erro)
     {

@@ -16,7 +16,7 @@
         $preco = $linha["Preco"];
     }
     $i = base64_encode($imagem);
-
+    $parcelamento = $preco/6;
 ?>
 
 <!DOCTYPE html>
@@ -44,6 +44,7 @@
         background-size: cover;
     }
 </style>
+
 <body>
 
     <!-- CABEÇALHO PRESO -->
@@ -68,7 +69,7 @@
                 <div class="nomeQDR" id="nomeQDR"> <?php echo "$nome" ?> </div>
                 <div class="precoQDR" id="precoQDR"> R$ <?php echo"$preco" ?> </div>
                 <div class="freteQDR">
-                    Em 6x de R$ 54,50 sem juros
+                    Em 6x de R$ <?php echo round($parcelamento)?> sem juros
                 </div> 
 
                 <br><br>
@@ -76,17 +77,17 @@
                 <div class="desc"><div class="desc_txt"> <?php echo($descricao) ?> </div></div>
 
                 <div class="finalizarQDR">
-                    <div class="qtdQDR">
-                        <input type="button" value="-" class="btnQTD" onclick="diminuir();"></button>
-                        <span class="qtdValor" id="qtd"> 1 </span>
-                        <input type="button" value="+" class="btnQTD" onclick="aumentar();"></button>
-                    </div>
+                    <div style="width: 12vmin;"> </div>
                     <div class="tamahnoQDR">
                         <div style="font-size: 1.5em;">Tamanho</div>
-                        <div class="tamanho">G</div>
+                        <div style="display:flex; flex-direction: row;" class="tamanho">
+                            <input type="button" value="&#10094;" class="btnTM" onclick="diminuirTM();">
+                            <div class="tamanho" id="tamanho">G</div>
+                            <input type="button" value="&#10095;" class="btnTM" onclick="aumentarTM();">
+                        </div>
                     </div>
                     <div class="fimQDR">
-                        <div class="finalizar"><a href="html/finalizar.html"> Finalizar compra </a></div>
+                        <input type="button" class="finalizar" onclick="concluir();" value="Finalizar compra">
                     </div>
                 </div>
             </div>
@@ -108,4 +109,10 @@
     </footer>
 
 </body>
+<script>
+    function concluir()
+    {
+        window.open("finalizar.php?cod="$cod,"_blank")
+    }
+</script>
 </html>
