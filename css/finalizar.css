@@ -10,16 +10,33 @@ h2 {
 
 .finalizar {
     width: 70vmin;
-    height: 60vmin;
+    height: 65vmin;
     background-color: #070707cc;
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-family: Voga;
     border: 2px solid #ffffff;
     cursor:auto;
+}
+
+.titulo {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+.btnVoltar {
+    width: 5vmin;
+    height: 5vmin;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    background-color: #070707cc;
+    color: #ffffff;
+    display: none;
 }
 
 .pagar {
@@ -63,3 +80,81 @@ h2 {
     text-align: center;
     font-size: 3em;
 }
+
+.formC {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    height: 50vmin;
+    width: 40vmin;
+}
+.inform {
+    width: auto;
+    height: 5vmin;
+    border-radius: 5px;
+    border: none;
+    margin: 1vmin;
+    text-align: center;
+    padding-left: 2px;
+    border: 1px solid #616161;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+.finalizarCompra {
+    font-family: sans-serif;
+    border-style: none;
+    font-size: 1.25em;
+    background-color: #4b4b4b;
+    color: #ffffff;
+    width: auto;
+    height: 4vmin;
+    cursor: pointer;
+}
+.comprarPIX {
+    width: auto;
+    height: 50vmin;
+    display: none; 
+    flex-direction: column; 
+    align-items: center;
+}
+    .informEndPIX {
+        width: 30vmin;
+        height: 5vmin;
+        border-radius: 5px;
+        border: none;
+        margin: 1vmin;
+        text-align: center;
+        padding-left: 2px;
+        border: 1px solid #616161;
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+    .finPix {
+        width: 20vmin;
+        height: 5vmin;
+        border-radius: 5px;
+        border: none;
+        margin: 1vmin;
+        text-align: center;
+        padding-left: 2px;
+        border: 1px solid #616161;
+        background-color: #1a1a1a;
+        color: #ffffff;
+        font-family: Voga;
+        font-size: 1.5em;
+    }
+.qrcode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em
+}
+    .qrcodeTxt {
+        width: 25vmin;
+        text-align: center;
+        background-color: #1a1a1a;
+        border-radius: 5px;
+        border: 1px solid #616161;
+    }
