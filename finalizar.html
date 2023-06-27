@@ -1,10 +1,22 @@
 <?php 
-/*
+
+    session_start();
+
     $cod = $_GET["cod"];
 
     include("conecta.php");
-*/
+    
+    $comando = $pdo->prepare("SELECT * FROM quadros WHERE idQuadros = :cod ");
+    $comando->bindParam(':cod', $cod);
+    $resultado = $comando->execute();
+
+    while($linha = $comando->fetch())
+    {
+        $preco = $linha["Preco"];
+    }
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +50,7 @@
     <header> 
         <table class="tableHD">
             <tr> 
-                <th> <a href="../html/index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a> </th>
+                <th> <a href="index.php" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a> </th>
                 <th> <div class="searchbar"></div> </th> 
 
             </tr>
@@ -53,7 +65,7 @@
             <div class="titulo">
                 <button onclick="pagVoltar();" class="btnVoltar" id="btnVoltar"><</button>
                 <div style="width: 2vmin;" ></div>
-                <H2 id="titulo">Selecione a forma de pagamento</H2>
+                <H2 id="titulo" class="titulo">Selecione a forma de pagamento</H2>
             </div>
             <div class="fim1" id="metodoPag" >
                 <button onclick="pagarCartao();" class="pagar" id="metodoPag">Pagamento com Cartão</button>
@@ -62,10 +74,10 @@
                 <button onclick="pagarPix();" class="pagar" id="metodoPag2">Pagamento com Pix</button>
             </div>      
             <div class="fim3" id="metodoPag3" >
-                <div id="metodoPag3">R$ 500.00</div>
+                <div id="metodoPag3">R$ <?php echo $preco ?></div>
             </div>
             <!-- Cartão -->
-            <form action="" action="#" method="post" class="formC" style="display: none;" id="formC" onsubmit="return Validar();">
+            <form action="" method="post" class="formC" style="display: none;" id="formC" onsubmit="return Validar();">
                 <input type="text" name="numCart" id="numCart" placeholder="Número do Cartão" class="inform">
                 <input type="text" name="nomeCart" id="nomeCart" placeholder="Nome completo do Titular" class="inform">
                 <input type="text" name="vencC" id="vencC" placeholder="Data de Vencimento AA/MM" class="inform">
@@ -74,15 +86,20 @@
                 <br><br>
                 <input type="submit" value="Finalizar Compra" class="finalizarCompra">
             </form>
-            <div class="comprarPIX" id="comprarPix"> <br><br><br><br><br>
-                <input type="text" name="Endereco" class="informEndPIX" id="endecoPix" minlength="5" placeholder="Digite seu Endereço">
-                <div style="height: 2vmin;"></div>
-                <button onclick="finalizarPix();" class="finPix" style="cursor: pointer;">Finalizar</button>
+            <!-- Pix -->
+            <div class="comprarPIX" id="comprarPix"> <br><br><br>
+                <form action="#" method="post" id="formPix"onsubmit="return finalizarPix(event);">
+                    <input type="text" name="Endereco" class="informEndPIX" id="enderecoPix" placeholder="Digite seu Endereço">
+                    <div style="height: 1px;"><label class="error" id="error">Endereço inválido</label></div>
+                    <div style="height: 2vmin;"></div>
+                    <input type="submit" class="finPix" style="cursor: pointer;">
+                </form>
             </div>
             <div class="qrcode" style="display: none;" id="qrcode">
                 <img src="qrcode.png" alt="" style="width: 100%; height: 100%;"><br>
                 <a href="index.html" class="qrcodeTxt">Finalizar comprar</a>
             </div>
+
         </div>
 
     </main>

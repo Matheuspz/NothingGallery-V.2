@@ -1,5 +1,7 @@
 <?php 
 
+    session_start();
+
     $cod = $_GET["cod"];
 
     include("conecta.php");
@@ -29,7 +31,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/comprar.css">
-    <script src="javacript/comprar.js"></script>
+    <script src="javascript/comprar.js"></script>
 </head>
 <style>
     @font-face {
@@ -52,7 +54,7 @@
     <header> 
         <table class="tableHD">
             <tr> 
-                <th> <a href="index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a> </th>
+                <th> <a href="index.php" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a> </th>
                 <th> <div class="searchbar"></div> </th> 
 
             </tr>
@@ -112,7 +114,7 @@
 <script>
     function concluir()
     {
-        window.open("finalizar.php?cod="$cod,"_blank")
+        window.open("finalizar.php?cod=<?php echo $cod; ?>", "_blank")
     }
 </script>
 </html>

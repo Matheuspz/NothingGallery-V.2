@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nothing Gallery</title>
         <link rel="stylesheet" href="../css/login_singin.css">
-        <script src="../javacript/login_singin.js"></script>
+        <script src="../javascript/login_singin.js"></script>
     </head>
     <body>
 
@@ -17,7 +17,7 @@
                 <tr> 
                     <th>
                         <div style="width: 100%; height: 100%; position: relative;"> 
-                            <a href="../index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a>
+                            <a href="../index.php" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a>
                         </div>
                     <th> 
                         <div class="searchbar"></div> 

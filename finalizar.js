@@ -32,10 +32,34 @@ function finalizarPix() {
     document.getElementById('titulo').innerHTML = "Leia QRCODE da chave Pix";
     document.getElementById('qrcode').style.display = "flex"
     document.getElementById('titulo').style.width = "";
-
 }
 
 function Validar() {
     let regexNumC = /^.{13,16}$/gm;
     let regexNome = /^[a-z]+\ [a-z]+$/gm;
+}
+
+function finalizarPix(event) {
+
+    event.preventDefault();
+
+    let enderecoPix = document.forms["formPix"]["enderecoPix"].value;
+    let regexEnd1 = /^[a-z]+\ [0-9]+$/;
+
+    let vreA = regexEnd1.test(enderecoPix); 
+
+    if( vreA == false ) {
+        document.getElementById("error").style.display = "block";
+        return false;
+    } else {
+        document.getElementById("comprarPix").style.display = "none";
+        document.getElementById("btnVoltar").style.display = "none";
+        document.getElementById('titulo').innerHTML = "Leia QRCODE da chave Pix";
+        document.getElementById('qrcode').style.display = "flex"
+        document.getElementById('titulo').style.width = "";
+
+        return true;
+    }
+
+
 }

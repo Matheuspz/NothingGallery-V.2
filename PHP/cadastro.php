@@ -10,7 +10,7 @@
     $resultado = $comando->execute();
 
     // Para voltar no formulário:
-    header("Location: ../html/login_singin.html");
+    header("Location: ../php/login_singin.php");
 
 
 ?>

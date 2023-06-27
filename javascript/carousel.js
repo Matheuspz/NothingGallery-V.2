@@ -23,12 +23,3 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
-
-
-
-
-
-
-function EntrarCadastrar() {
-  window.open("html/login_singin.html", "_self")
-}

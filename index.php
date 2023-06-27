@@ -1,3 +1,16 @@
+<?php 
+    session_start();
+
+    if (isset($_SESSION['user'])) {
+        echo '<script>
+            window.addEventListener("load", function() {
+                userLogin();
+            });
+        </script>';
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +20,9 @@
     <title>Nothing Gallery</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/carousel.css">
-    <script src="javacript/carousel.js"></script>
+    <script src="javascript/carousel.js"></script>
+    <script src="javascript/index.js"></script>
+
 </head>
 
 <style>
@@ -29,7 +44,21 @@
         font-size: 4em;
         color: #F8FD0C;
     }
+    .userIconBtn {
+        background-image: url(images/user_icon.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 50px;
+        width: 5vmin;
+        height: 5vmin;
+    }
 </style>
+<script> 
+    function EntrarCadastrar() {
+        window.open("php/login_singin.php", "_self")
+    }
+
+</script>
 
 <body>
 
@@ -39,20 +68,35 @@
         <table class="tableHD">
             <tr>
                 <th>
-                    <div style="width: 100%; height: 100%; position: relative;"> 
-                        <a href="index.html" style="text-decoration: none; color: #ffffff;"> <h1> Nothing Gallery </h1> </a>
+                    <div style="width: 100%; height: 100%;" class="headerh1"> 
+                        <a href="index.php" style="text-decoration: none; color: #ffffff;" id="logo" > <h1> Nothing Gallery </h1> </a>
                     </div>
                 </th>
                 <th> <div class="searchbar"></div> </th> 
                 <th> 
-                    <button class="btnEntrar" onclick="EntrarCadastrar()">Entrar/Cadastrar</button>
+                    <button style="display:block" class="btnEntrar" id="btnEntrar" onclick="EntrarCadastrar();">Entrar/Cadastrar</button>
+                    <button style="display:none;" class='userIconBtn' id="userIconBtn" onclick="userIconToggle();"></button>
                 </th>
                 
             </tr>
         </table>
     </header>
+    <script>
+    function userLogin() {
+        document.getElementById("btnEntrar").style.display = "none";
+        document.getElementById("userIconBtn").style.display = "block";
+    }
+    </script> 
 
     <main>
+
+        <!-- UserIcon -->
+        <div style="display:none" id="userInfos">
+            <div class="userIconDiv" id="userIconDiv">
+                <button class="userIconDivBtn" >Minhas Informações</button>
+                <button class="userIconDivBtn" onclick="location.href='php/logout.php'">Sair</button>
+            </div>
+        </div>
         
         <!-- QUADROS EM DESTAQUE  -->
 
@@ -644,7 +688,8 @@
 <script>
     function Enviar(N)
     {
-        window.open("comprar.php?cod="+N,"_blank")
+        window.open("comprar.php?cod="+N,"_self")
     }
 </script>
 </html>
+

@@ -162,7 +162,7 @@
                     height: 50%;
                     width: 80%;
                     background-color: #000000;
-                    font-size: 1em;
+                    font-size: 1.45em;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -172,5 +172,6 @@
                     color: #ffffff;
                     cursor: pointer;
                     border: none;
+                    font-family: Voga;
                 }
         
