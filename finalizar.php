@@ -100,7 +100,7 @@
             </div>
             <div class="qrcode" style="display: none;" id="qrcode">
                 <img src="qrcode.png" alt="" style="width: 100%; height: 100%;"><br>
-                <a href="index.html" class="qrcodeTxt">Finalizar comprar</a>
+                <a href="index.php" class="qrcodeTxt">Finalizar comprar</a>
             </div>
 
         </div>

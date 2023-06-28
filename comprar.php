@@ -114,7 +114,7 @@
 <script>
     function concluir()
     {
-        window.open("finalizar.php?cod=<?php echo $cod; ?>", "_blank")
+        window.open("finalizar.php?cod=<?php echo $cod; ?>", "_self")
     }
 </script>
 </html>

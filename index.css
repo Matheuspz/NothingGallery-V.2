@@ -35,7 +35,7 @@ header {
     }
 
     .btnEntrar {
-        background-color: #4d4d4d;
+        background-color: #181818;
         color: #ffffff;
         width: 20vmin;
         height: 5vmin;
@@ -43,6 +43,7 @@ header {
         font-size: 1.5rem;
         cursor: pointer;
         display: block;
+        border: 1px solid #2b2b2b;
     }
 
     .userIconBtn {
