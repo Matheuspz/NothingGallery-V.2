@@ -18,14 +18,10 @@
         $comando->execute();
         $iduser = $comando->fetchColumn();
 
-        if ($username) {
+        if ($iduser) {
             $_SESSION['user'] = $iduser;
 
             header("Location: ../index.php");
-        } else {
-            // Nenhum resultado encontrado, redirecione para a página de login com mensagem de erro
-            $_SESSION['error'] = "Credenciais inválidas";
-            header("Location: ../php/login_singin.php");
         }
     } 
 ?>

@@ -48,6 +48,7 @@ function lValidar() {
 
 function cValidar() {
     let regexEmail = /^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/gm; 
+    let regexEmailAdmin = /^[a-z0-9]+W*(@admin.com.org)\W*$/gm;
     let regexSenha = /^.{8,20}$/gm;
 
     let cNameF = document.forms["cadastroForm"]["cadastroNome"].value;
@@ -92,7 +93,8 @@ function cValidar() {
 
     /* Email */
     let emailVerify = regexEmail.test(cEmailF);
-    if (emailVerify == false) {
+    let adminEmailVerify = regexEmailAdmin.test(cEmailF)
+    if (emailVerify == false || adminEmailVerify == false ) {
         cEmail.style.backgroundColor = "#ff9d9d";
         
         cErro.style.opacity = 1;

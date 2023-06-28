@@ -77,12 +77,15 @@
                 <div id="metodoPag3">R$ <?php echo $preco ?></div>
             </div>
             <!-- Cartão -->
-            <form action="" method="post" class="formC" style="display: none;" id="formC" onsubmit="return Validar();">
+            <form action="php/finalizarCartao.php" method="post" class="formC" style="display: none;" id="formC" onsubmit="return Validar();">
                 <input type="text" name="numCart" id="numCart" placeholder="Número do Cartão" class="inform">
                 <input type="text" name="nomeCart" id="nomeCart" placeholder="Nome completo do Titular" class="inform">
                 <input type="text" name="vencC" id="vencC" placeholder="Data de Vencimento AA/MM" class="inform">
                 <input type="text" name="codsegC" id="codsegC" maxlength="3" placeholder="Código de Segurança" class="inform"> 
                 <input type="text" name="endereco" id="enderecoC" minlength="5" placeholder="Endereço" class="inform">
+                <input type="hidden" name="cod" value="<?php echo $cod; ?>">
+                <input type="hidden" name="preco" value="<?php echo $preco; ?>">
+                <div style="height: 1px;"><label id="labelC" class="errorC"></label></div>
                 <br><br>
                 <input type="submit" value="Finalizar Compra" class="finalizarCompra">
             </form>

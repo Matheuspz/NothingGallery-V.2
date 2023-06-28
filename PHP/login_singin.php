@@ -42,7 +42,6 @@
                                 <input type="text" class="inform" id="loginEmail" placeholder="E-mail" name="loginEmail"><br>
                                 <input type="password" class="inform" id="loginSenha" placeholder="Senha" name="loginSenha"><br>
                                 <div style="text-align: left;">
-                                    <a href="#" target="_self" class="links" style="font-family: none;">Esqueceu senha?</a>
                                 </div>
                                 <label id="lError" class="error" style="font-family: none;"></label>
                                 

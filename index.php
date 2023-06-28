@@ -8,6 +8,8 @@
             });
         </script>';
     }
+    include("conecta.php");
+
 
 ?>
 
@@ -93,7 +95,7 @@
         <!-- UserIcon -->
         <div style="display:none" id="userInfos">
             <div class="userIconDiv" id="userIconDiv">
-                <button class="userIconDivBtn" >Minhas Informações</button>
+                <button class="userIconDivBtn" onclick="location.href='php/usuario.php'">Minhas Informações</button>
                 <button class="userIconDivBtn" onclick="location.href='php/logout.php'">Sair</button>
             </div>
         </div>
@@ -185,7 +187,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(19);" class="buttonQuadro">
                                 <img src="images/Grunge/Brilliant sky.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Brilliant Sky R$300,00 </div>
+                                <div class="text_quadros"> Brilliant Sky </div>
                             </button>
                         </div>
                         <br>
@@ -195,7 +197,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(20);" class="buttonQuadro">
                                 <img src="images/Grunge/Lighting city.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Lighting City R$ 250,00  </div>
+                                <div class="text_quadros"> Lighting City </div>
                             </button>
                         </div>
                     </td>
@@ -204,7 +206,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(28);" class="buttonQuadro">
                                 <img src="images/Grunge/Lost and forgotten.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Lost and forgotten R$ 350,00 </div>
+                                <div class="text_quadros"> Lost and forgotten </div>
                             </button>
                         </div>  
                     </td>  
@@ -216,7 +218,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(29);" class="buttonQuadro">
                                 <img src="images/Grunge/Meteor shower.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Meteor shower R$ 250,00 </div>
+                                <div class="text_quadros"> Meteor shower </div>
                             </button>
                         </div>
                     </td>
@@ -225,7 +227,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(30);" class="buttonQuadro">
                                 <img src="images/Grunge/Way for home.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Way for home R$ 300,00  </div>
+                                <div class="text_quadros">  Way for home  </div>
                             </button>
                         </div>
                     </td>
@@ -234,7 +236,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(31);" class="buttonQuadro">
                                 <img src="images/Grunge/Way of river.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Way of river R$ 150,00  </div>
+                                <div class="text_quadros">  Way of river  </div>
                             </button>
                         </div>   
                     </td>    
@@ -268,7 +270,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(32);" class="buttonQuadro">
                                 <img src="images/Surrealismo/Giant lampshade.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Giant lampshade R$ 250,00 </div>
+                                <div class="text_quadros"> Giant lampshade </div>
                             </button>
                         </div>
                         <br>
@@ -278,7 +280,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(33);" class="buttonQuadro">
                                 <img src="images/Surrealismo/Horned creature.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Horned creature R$ 300,00  </div>
+                                <div class="text_quadros"> Horned creature  </div>
                             </button>
                         </div>
                 </td>
@@ -287,7 +289,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(34);" class="buttonQuadro">
                                 <img src="images/Surrealismo/Light up.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Light up R$ 350,00 </div>
+                                <div class="text_quadros"> Light up </div>
                             </button>
                         </div>  
                     </td>  
@@ -299,7 +301,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(35);" class="buttonQuadro">
                                 <img src="images/Surrealismo/Robots are here.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Robots are here R$ 300,00 </div>
+                                <div class="text_quadros"> Robots are here </div>
                             </button>
                         </div>
                     </td>
@@ -308,7 +310,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(36);" class="buttonQuadro">
                                 <img src="images/Surrealismo/Skyblock.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Skyblock R$ 250,00  </div>
+                                <div class="text_quadros">  Skyblock  </div>
                             </button>
                         </div>
                     </td>
@@ -317,7 +319,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(37);" class="buttonQuadro">
                                 <img src="images/Surrealismo/Stop in the time.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Stop in the time R$ 150,00  </div>
+                                <div class="text_quadros">  Stop in the time  </div>
                             </button>
                         </div>   
                     </td>    
@@ -351,7 +353,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(13);" class="buttonQuadro">
                                 <img src="images/Fotorrealista/Abraham.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Abraham R$ 350,00 </div>
+                                <div class="text_quadros"> Abraham </div>
                             </button>
                         </div>
                         <br>
@@ -361,7 +363,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(14);" class="buttonQuadro">
                                 <img src="images/Fotorrealista/Chad claus.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Santa Claus R$ 250,00  </div>
+                                <div class="text_quadros"> Santa Claus  </div>
                             </button>
                         </div>
                 </td>
@@ -370,7 +372,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(15);" class="buttonQuadro">
                                 <img src="images/Fotorrealista/King Mercury.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Freddie Mercury R$ 200,00 </div>
+                                <div class="text_quadros"> Freddie Mercury </div>
                             </button>
                         </div>  
                     </td>  
@@ -382,7 +384,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(16);" class="buttonQuadro">
                                 <img src="images/Fotorrealista/Mescla Jackson.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Michael Jackson R$ 300,00 </div>
+                                <div class="text_quadros"> Michael Jackson </div>
                             </button>
                         </div>
                     </td>
@@ -391,7 +393,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(17);" class="buttonQuadro">
                                 <img src="images/Fotorrealista/Splash.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Slash R$ 250,00  </div>
+                                <div class="text_quadros">  Slash  </div>
                             </button>
                         </div>
                     </td>
@@ -400,7 +402,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(18);" class="buttonQuadro">
                                 <img src="images/Fotorrealista/Visions of war.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Tommy Shelby R$ 150,00  </div>
+                                <div class="text_quadros">  Tommy Shelby  </div>
                             </button>
                         </div>   
                     </td>    
@@ -434,7 +436,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(2);" class="buttonQuadro">
                                 <img src="images/Analogia/Christmas day.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Christmas day R$ 250,00 </div>
+                                <div class="text_quadros"> Christmas day  </div>
                             </button>
                         </div>
                         <br>
@@ -444,7 +446,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(1);" class="buttonQuadro">
                                 <img src="images/Analogia/Alone street lamp.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Alone street lamp R$ 300,00  </div>
+                                <div class="text_quadros"> Alone street lamp   </div>
                             </a>
                         </div>
                 </td>
@@ -453,7 +455,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(3);" class="buttonQuadro">
                                 <img src="images/Analogia/Litlle Autumn rain.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Little Autumn R$ 350,00 </div>
+                                <div class="text_quadros"> Little Autumn  </div>
                             </button>
                         </div>  
                     </td>  
@@ -465,7 +467,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(5);" class="buttonQuadro">
                                 <img src="images/Analogia/Thanksgiving.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Thanksgiving R$ 350,00 </div>
+                                <div class="text_quadros"> Thanksgiving </div>
                             </a>
                         </div>
                     </td>
@@ -474,7 +476,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(4);" class="buttonQuadro">
                                 <img src="images/Analogia/Snow and Rain.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Snow and Rain R$ 250,00  </div>
+                                <div class="text_quadros">  Snow and Rain   </div>
                             </button>
                         </div>
                     </td>
@@ -483,7 +485,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(6);" class="buttonQuadro">
                                 <img src="images/Analogia/Valentine_s day in Winter.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Valentine day in Winter R$ 150,00  </div>
+                                <div class="text_quadros">  Valentine day in Winter  </div>
                             </button>
                         </div>   
                     </td>    
@@ -517,7 +519,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(7);" class="buttonQuadro">
                                 <img src="images/Cubismo/Album rocket.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Album rocket R$ 300,00 </div>
+                                <div class="text_quadros"> Album rocket </div>
                             </button>
                         </div>
                         <br>
@@ -527,7 +529,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(8);" class="buttonQuadro">
                                 <img src="images/Cubismo/Bugged houses.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Bugged houses R$ 350,00  </div>
+                                <div class="text_quadros"> Bugged houses   </div>
                             </button>
                         </div>
                 </td>
@@ -536,7 +538,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(9);" class="buttonQuadro">
                                 <img src="images/Cubismo/Cubic temple.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Cubic temple R$ 150,00 </div>
+                                <div class="text_quadros"> Cubic temple  </div>
                             </button>
                         </div>  
                     </td>  
@@ -548,7 +550,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(11);" class="buttonQuadro">
                                 <img src="images/Cubismo/Horizon pink.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Horizon pink R$ 300,00 </div>
+                                <div class="text_quadros"> Horizon pink </div>
                             </button>
                         </div>
                     </td>
@@ -557,7 +559,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(12);" class="buttonQuadro">
                                 <img src="images/Cubismo/Looking at the horizon.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Looking at the horizon R$ 250,00  </div>
+                                <div class="text_quadros"> Looking at the horizon  </div>
                             </button>
                         </div>
                     </td>
@@ -566,7 +568,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(10);" class="buttonQuadro">
                                 <img src="images/Cubismo/Goat.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Goat R$ 150,00  </div>
+                                <div class="text_quadros">  Goat   </div>
                             </button>
                         </div>   
                     </td>    
@@ -600,7 +602,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(38);" class="buttonQuadro">
                                 <img src="images/Variado/Alley sold.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Alley sold R$ 300,00 </div>
+                                <div class="text_quadros"> Alley sold  </div>
                             </button>
                         </div>
                         <br>
@@ -610,7 +612,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(39);" class="buttonQuadro">
                                 <img src="images/Variado/Camp of flowers.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Camp of flowers R$ 250,00  </div>
+                                <div class="text_quadros"> Camp of flowers   </div>
                             </button>
                         </div>
                 </td>
@@ -619,7 +621,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(40);" class="buttonQuadro">
                                 <img src="images/Variado/Conifers florest.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Conifers florest R$ 150,00 </div>
+                                <div class="text_quadros"> Conifers florest  </div>
                             </button>
                         </div>  
                     </td>  
@@ -631,7 +633,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(41);" class="buttonQuadro">
                                 <img src="images/Variado/Crow.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Crow R$ 300,00 </div>
+                                <div class="text_quadros"> Crow  </div>
                             </button>
                         </div>
                     </td>
@@ -640,7 +642,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(42);" class="buttonQuadro">
                                 <img src="images/Variado/Elegant goat.jpg" class="quadro_slide">
-                                <div class="text_quadros"> Elegant goat R$ 350,00  </div>
+                                <div class="text_quadros"> Elegant goat   </div>
                             </button>
                         </div>
                     </td>
@@ -649,7 +651,7 @@
                         <div class="mySlidesQDR fade">
                             <button onclick="Enviar(43);" class="buttonQuadro">
                                 <img src="images/Variado/Farm.jpg" class="quadro_slide">
-                                <div class="text_quadros">  Farm R$ 200,00  </div>
+                                <div class="text_quadros">  Farm   </div>
                             </a>
                         </div>   
                     </td>    
@@ -677,8 +679,6 @@
                     <a href="https://www.youtube.com/" target="_blank" class="links"> Youtube </a> <br>
                     <l style="font-size: 1.5em;">Nothing_gallery@gmail.com</l>
                     
-                    
-                    <a href="html/login_singin.html">a</a>
                 
                 </div>
         </div>
